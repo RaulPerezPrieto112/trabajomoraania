@@ -25,8 +25,13 @@ class Vista extends StatelessWidget {
       itemBuilder: (context, index) {
         final MenuItemButton = appMenuItems[index];
         return ListTile(
+          leading: Icon(MenuItemButton.icono, color: Colors.purple),
+          trailing: Icon(Icons.arrow_forward_ios_outlined, color: Colors.purple,),
           title: Text(MenuItemButton.titulo),
           subtitle: Text(MenuItemButton.subtitulo),
+          onTap: (){
+            print("boton preionado ${MenuItemButton.titulo}")
+          },
         );
       } ,
     );
