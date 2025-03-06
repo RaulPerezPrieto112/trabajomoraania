@@ -24,7 +24,10 @@ class Vista extends StatelessWidget {
       itemCount: appMenuItems.length,
       itemBuilder: (context, index) {
         final MenuItemButton = appMenuItems[index];
-        return Text(MenuItemButton.titulo);
+        return ListTile(
+          title: Text(MenuItemButton.titulo),
+          subtitle: Text(MenuItemButton.subtitulo),
+        );
       } ,
     );
   }
