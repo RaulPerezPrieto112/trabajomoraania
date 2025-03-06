@@ -30,7 +30,7 @@ class Vista extends StatelessWidget {
           title: Text(MenuItemButton.titulo),
           subtitle: Text(MenuItemButton.subtitulo),
           onTap: (){
-            print("boton preionado ${MenuItemButton.titulo}")
+            Navigator.pushNamed(context, MenuItemButton.link);
           },
         );
       } ,
