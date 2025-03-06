@@ -37,6 +37,12 @@ class EjemploBotones extends StatelessWidget {
             icon: Icon(Icons.access_alarm_rounded),
             label: Text("Elevated Icon"),
           ),
+          FilledButton(onPressed: (){}, child: Text("Filled")),
+          FilledButton.icon(
+            onPressed: (){},
+            icon: Icon(Icons.accessibility_new),
+            label: Text("Filled Icon"),
+          )
         ],
       ),
     );
